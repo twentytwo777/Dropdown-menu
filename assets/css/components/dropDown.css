@@ -1,0 +1,90 @@
+.dropdown {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    margin: auto;
+}
+
+.main__dd {
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(49, 49, 49);
+    box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.main__dd:hover {
+    background-color: rgb(63, 63, 63);
+}
+
+.title_dd {
+    font-weight: 600;
+    letter-spacing: .5px;
+    user-select: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.dd {
+    position: absolute;
+    margin-top: -35px;
+    margin-right: 15px;
+    transform: rotate(0deg);
+    transition: .3s;
+}
+
+.dd.active {
+    transform: rotate(180deg);
+}
+
+.dd_ml {
+    list-style: none;
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    display: none;
+    transition: .3s;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 150px;
+    overflow: auto;
+}
+
+.dd_ml.active {
+    display: block;
+}
+
+.dd_ml.active, .dd_ml.activef {
+    transition: .3s;
+}
+
+.dd_ml a {
+    text-decoration: none;
+}
+
+.dd_item {
+    padding-left: 15px; 
+    user-select: none;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.dd_item:hover {
+    background-color: rgb(68, 68, 68);
+    color: rgb(192,192,192);
+}
+
+.dd_link {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
